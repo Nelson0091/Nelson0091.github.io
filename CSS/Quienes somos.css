@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Mifuente;
+    src: url(../FUENTES/Pixelmania.ttf);
+}
+
+@font-face {
+    font-family: Mifuentet;
+    src: url(../FUENTES/Diary\ of\ an\ 8-bit\ mage.otf);
+}
+
+.Mif{
+    font-family: Mifuente, Arial, Helvetica, sans-serif;
+}
+
+.Mift{
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+}
+
+.fondo{
+    background-image: url(../IMAGENES/Fondo/imageonline-gifspeed-1327295.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 768px){ /* ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+    .showcase p{
+        width: 70%;
+    }
+    .nav{        
+        position: sticky;
+        top: 5;
+    }
+    aside{
+        position: sticky;
+        top: 40px;
+    }
+
+    [class*="col-"]{
+        padding: 0px;
+    }
+}    
+
+[class*="col-"]
+{
+    float: left;
+    padding:15px;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    display: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+nav{
+    padding: 10%;
+    color: white;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a{
+    display: block;
+    padding: 10px 15px;
+    background-color: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav a{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav a:hover{
+    background-color: rgba(224, 246, 250, 0.733);
+}
+
+footer{
+    background-color: rgb(46,26,89);
+    padding: 10px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer hr{
+    width: 100%;
+}
+footer div *{
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer>p{
+    padding-top: 6px;
+    color: white; 
+}
+
+.showcase{
+    padding: 10px;
+    background-image: url("../IMAGENES/Portada/WhatsApp\ Image\ 2021-04-03\ at\ 7.17.32\ PM.jpeg");
+    background-position: center;
+    box-sizing: border-box;
+}
+.showcase img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.showcase h1{
+    font-family: Mifuente;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 150px;
+}

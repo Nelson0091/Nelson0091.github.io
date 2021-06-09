@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Mifuentet;
+    src: url(../FUENTES/Diary\ of\ an\ 8-bit\ mage.otf);
+}
+
+@font-face {
+    font-family: Mifuente;
+    src: url(../FUENTES/Pixelmania.ttf);
+}
+
+.Mift{
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+    background-image: url(../IMAGENES/Fondo/retrowave-lineas-montanas-3063.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+[class*="col-"]
+{
+  width: 100%;
+}  
+
+@media only screen and (min-width: 768px){ /* ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+
+
+.showcase{
+    padding: 10px;
+    background-image: url("../IMAGENES/Portada/WhatsApp\ Image\ 2021-04-03\ at\ 7.17.32\ PM.jpeg");
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.showcase{
+    padding: 10px;
+    background-image: url("../IMAGENES/Portada/WhatsApp\ Image\ 2021-04-03\ at\ 7.17.32\ PM.jpeg");
+    background-position: center;
+    box-sizing: border-box;
+}
+.showcase img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.showcase h1{
+    font-family: Mifuente;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 150px;
+}
+
+.table{
+    color: white;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.form-registro{
+    width: 800px;
+    background: rgba(234, 235, 241, 0.5);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 90%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(72, 75, 82);
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(137, 151, 214, 0.9);
+}
+
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font: size 18px;
+}
+
+.form-registro a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-registro a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+
+.form-registro button{
+    width: 100%;
+    background: rgb(14, 63, 199);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+    height: 40px;
+    display: block;
+}
+
+
+.form-registro button:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
+
+/* Carrito de compras */
+
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+
+  .item {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .item-title {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .item-image {
+    height: 300px;
+    width: 100%;
+  }
+  
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+  }
+  
+  .item-details > .item-price {
+    margin: 0;
+  }
+
+  button{
+      display: center;
+      color: white;
+      background: white;
+      background-color: rgb(22, 49, 201);
+      margin: 5px 5px 5px 10px;
+      padding: 5px;
+      width: 150px;
+  }
+
+  .img{
+      padding: 15px;
+      width: 5%;
+      height: 5%;
+  }
+  
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li a{
+    display: block;
+    padding: 10px 15px;
+    background-color: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav a{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: none;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav a:hover{
+    background-color: rgba(224, 246, 250, 0.733);
+}

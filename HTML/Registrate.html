@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Registrate.css">
+    <link rel="Icon" href="/IMAGENES/Favicon/png-transparent-pac-man-pixel-art-retro-game-text-rectangle-video-game.ico">
+    <title>Registro</title>
+    <script type="text/javascript">
+
+    function validar() {
+
+        var form = document.form;
+
+        if(form.nombres.value == 0 ){
+            alert("Favor ingrese un nombre");
+            form.nombres.value="";
+            form.nombres.focus();
+            return false;
+        }
+
+        if(form.apellidos.value == 0){
+            alert("Favor ingrese un apellido");
+            form.apellidos.value="";
+            form.apellidos.focus();
+            return false;
+        }
+
+        if(form.correo.value == 0){
+            alert("Ingrese su email");
+            form.correo.value="";
+            form.correo.focus();
+            return false;
+        }
+
+        if(form.passw.value == 0){
+            alert("Ingrese una contraseña");
+            form.passw.value="";
+            form.passw.focus();
+            return false;
+        }
+
+        alert("Registro completado");
+        form.submit();
+    }
+    
+    </script>
+
+
+
+</head>
+<body>
+    <div id="contenedor" class="fondo">
+        <form name="form" action="Login.html" method="GET" onsubmit="return validar();">
+        <section class="form-registro">
+            <h4>Formulario de Registro</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingrese un nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="ingrese un apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+            <input class="controls" type="password" name="passw" id="passw" placeholder="ingrese una contraseña">
+            <p>Estoy de acuerdo con los <br> <a href="#">Terminos y Condificiones</a></p>
+            <button type="submit" title="Ingresar" name="Ingresar">Registrar</button>
+            <p><a href="../HTML/Login.html">Ya poseo una cuenta</a></p>
+    
+        </section>
+    </form>
+    </div>
+    
+
+</body>
+
+
+</html>

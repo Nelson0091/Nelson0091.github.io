@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar comprar</title>
+    <link rel="stylesheet" href="../CSS/Compra.css">
+    <link rel="Icon" href="/IMAGENES/Favicon/png-transparent-pac-man-pixel-art-retro-game-text-rectangle-video-game.ico">
+    
+    <script>
+        function validar() {
+
+     var form = document.form;
+
+      if(form.nombres.value == 0 ){
+       alert("Favor ingrese un nombre");
+       form.nombres.value="";
+       form.nombres.focus();
+       return false;
+       }
+
+    if(form.apellidos.value == 0){
+        alert("Favor ingrese un apellido");
+        form.apellidos.value="";
+        form.apellidos.focus();
+        return false;    
+       }
+
+    if(form.correo.value == 0){
+        alert("Ingrese su email");
+        form.correo.value="";
+        form.correo.focus();
+        return false;    
+    }
+
+    if(form.direccion.value == 0){
+        alert("Ingrese una direccion");
+        form.direccion.value="";
+        form.direccion.focus();
+        return false;
+    }
+
+    if(form.celular.value == 0){
+        alert("Ingrese su telefono");
+        form.celular.value="";
+        form.celular.focus();
+        return false;
+    }
+
+    alert("Registro completado");
+     form.submit();
+    }
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <div class="showcase">
+            <div class="tenue contenedor">
+                <h1>RETRO GAME</h1>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="contenedor" class="fondo">
+        <form name="form" action="Paguina de inicio.html" method="GET" onsubmit="return validar();">
+        <section class="form-registro">
+            <h4>Realizar compra</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="ingrese un nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="ingrese un apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+            <input class="controls" type="text" name="direccion" id="direccion" placeholder="ingrese su direccion">
+            <input class="controls" type="number" name="celular" id="celular" placeholder="ingrese un numero de telefono">
+            
+
+            <div id="carrito" class="col-12" >
+                <table class="table" id="lista-compra" >
+
+                    </tbody>
+                    <tr>
+                        <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                        <th scope="col">
+                            <p id="subtotal"></p>
+                        </th>
+                        <!-- <th scope="col"></th> -->
+                    </tr>
+                    <tr>
+                        <th colspan="4" scope="col" class="text-right">IMPUESTO :</th>
+                        <th scope="col">
+                            <p id="igv"></p>
+                        </th>
+                        <!-- <th scope="col"></th> -->
+                    </tr>
+                    <tr>
+                        <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                        <th scope="col">
+                            
+                        </th>
+                        <!-- <th scope="col"></th> -->
+                    </tr>
+
+                </table>
+            </div>
+
+            <button type="submit" title="Ingresar" name="Ingresar">Realizar compra</button>
+
+        </section>
+        </form>
+
+        <hr>
+
+        
+    </div>
+    
+
+ 
+    <script src="../JS/Carrito.js"></script>
+</body>
+</html>

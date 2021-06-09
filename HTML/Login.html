@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="Icon" href="/IMAGENES/Favicon/png-transparent-pac-man-pixel-art-retro-game-text-rectangle-video-game.ico">
+
+    <script>
+        function validar() {
+            if(form.usuario.value == 0){
+        alert("Ingrese su email");
+        form.usuario.value="";
+        form.usuario.focus();
+        return false;    
+    }
+
+    if(form.password.value == 0){
+        alert("Ingrese una contraseña");
+        form.password.value="";
+        form.password.focus();
+        return false;
+    }
+        }
+    </script>
+
+</head>
+<body>
+    
+    <div id="contenedor" class="fondo">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">
+                    Bienvenido
+                </div>
+                <form id="loginform">
+                    <input type="email" name="usuario" placeholder="Usuario" required>
+                    
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                    
+                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                </form>
+                <div class="pie-form">
+                    <a href="../HTML/Registrate.html">¿No tienes Cuenta? Registrate</a>
+                </div>
+            </div>
+            <div class="inferior">
+                <a href="../HTML/Paguina de inicio.html">Volver a inicio</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

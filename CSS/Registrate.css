@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Mifuentet;
+    src: url(../FUENTES/Diary\ of\ an\ 8-bit\ mage.otf);
+}
+
+body{
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+}
+
+.fondo{
+    background-image: url(../IMAGENES/Fondo/retrowave-lineas-montanas-3063.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.form-registro{
+    width: 400px;
+    background: rgb(137, 151, 214, 0.9);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: rgb(137, 151, 214, 0.9);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(14, 63, 199);
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font: size 18px;
+}
+
+.form-registro a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-registro a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+
+.form-registro button{
+    width: 100%;
+    background: rgb(14, 63, 199);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-family: Mifuentet, Arial, Helvetica, sans-serif;
+    height: 40px;
+    display: block;
+}
+
+
+.form-registro button:hover {
+    background-color: #0f4c75;
+    color:#bbe1fa;
+}
